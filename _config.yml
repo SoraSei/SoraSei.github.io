@@ -41,7 +41,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
-  # - jekyll-default-layout
+  - jekyll-default-layout
   # - jekyll-seo-tag
 
 paginate: 8
