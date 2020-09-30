@@ -1,0 +1,12 @@
+_site
+_posts/_draft
+package-lock.json
+node_modules
+.DS_Store
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+.vscode
+*.log
+*.lock
+*.sh

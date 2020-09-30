@@ -1,0 +1,48 @@
+title: SoraSei
+description: # this means to ignore newlines until "baseurl:"
+permalink: ":title/"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: # if your site has a twitter account, enter it here
+# theme: jekyll-theme-minimal
+
+author: SoraSei
+author-img: SoraSei.jpg
+author-about: I am a front-end developer.
+# social-twitter:
+# social-facebook:
+social-github: SoraSei
+# social-linkedin:
+social-weibo: 1739527914
+social-email: 310955450@qq.com
+social-rss: true
+social-song: 1409311773 # 825646 君の知らない物語 1409311773 夜に駆ける
+
+# discus-identifier:
+# baidu-track-id:
+# google-analytics:
+# google-track-id: UA-xxxxxx-xx
+# google-domain: SoraSei.github.io
+timezone: CN
+future: true
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+  # - jekyll-default-layout
+  # - jekyll-seo-tag
+
+paginate: 8
+paginate_path: "/page/:num"

@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="{{ site.baseurl }}/">
+          <img
+            alt="{{ site.author }}"
+            src="{{ site.baseurl }}/assets/img/{% if site.author-img %}{{ site.author-img }}{% endif %}"
+          />
+        </a>
+      </div>
+      <div class="author-name">{{ site.author }}</div>
+      <p>{{ site.author-about }}</p>
+      <iframe frameborder="no" width="220" height="86" src="//music.163.com/outchain/player?type=2&amp;id={{ site.social-song }}&amp;auto=0&amp;height=66"></iframe>
+    </div>
+  </header>
+  <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        {% if site.social-twitter %}
+        <li>
+          <a
+            href="https://twitter.com/{{ site.social-twitter }}"
+            target="_blank"
+            ><i class="fa fa-twitter" aria-hidden="true"></i
+          ></a>
+        </li>
+        {% endif %} {% if site.social-facebook %}
+        <li>
+          <a
+            href="https://facebook.com/{{ site.social-facebook }}"
+            target="_blank"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
+        </li>
+        {% endif %} {% if site.social-github %}
+        <li class="github">
+          <a href="http://github.com/{{ site.social-github }}" target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+        </li>
+        {% endif %} {% if site.social-linkedin %}
+        <li class="linkedin">
+          <a
+            href="https://in.linkedin.com/in/{{ site.social-linkedin }}"
+            target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </li>
+        {% endif %} {% if site.social-weibo %}
+        <li class="weibo">
+          <a href="https://weibo.com/{{ site.social-weibo }}" target="_blank"
+            ><i class="fa fa-weibo"></i
+          ></a>
+        </li>
+        {% endif %} {% if site.social-email %}
+        <li class="email">
+          <a href="mailto:{{ site.social-email }}"
+            ><i class="fa fa-envelope-o"></i
+          ></a>
+        </li>
+        {% endif %} {% if site.social-rss %}
+        <li class="rss">
+          <a href="{{ "/feed.xml" | prepend: site.baseurl }}"
+            ><i class="fa fa-rss"></i
+          ></a>
+        </li>
+        {% endif %}
+      </ul>
+    </section>
+    <!-- End Section Contact -->
+    <div class="copyright">
+      <p>{{ site.time | date: '%Y' }} &copy; {{ site.author }}</p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+</aside>
+<!-- End Sidebar -->
+<div class="content-box clearfix">{{ content }}</div>
